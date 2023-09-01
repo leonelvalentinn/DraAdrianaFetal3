@@ -1,0 +1,181 @@
+---
+import comego from '../img/logo-comego.png';
+import fetal from "../img/fetal-foundation.png";
+import visa from "../img/visa.png";
+import mastercard from "../img/mastercard.png";
+import amex from "../img/american-express.png";
+import dinero from "../img/dinero.png";
+import facebook from "../img/facebook.png";
+import instagram from "../img/instagram.png";
+import doctoralia from "../img/doctoralia.png";
+import whatsapp from "../img/whatsapp.png";
+---
+<footer class="footer-container">
+  <div class="bg-footer">
+    <div class="items-text">
+      <a href="/"><h4>Inicio</h4></a>
+      <a href="/Trayectoria"><h4>Conóceme</h4></a>
+      <a href="/#servicios"><h4>Servicios</h4></a>
+      <a href=""><h4>Ginecología</h4></a>
+      <a href="#ubicacion"><h4>Ubicación</h4></a>
+      <a href=""><h4>Contacto</h4></a>
+    </div>
+    <div class="footer-up">
+      <div>
+        <h4>Certificada por:</h4>
+        <div class="certificados">
+          <img src={comego} alt="">
+          <img src={fetal} alt="">
+        </div>
+      </div>
+      <div class="pago">
+        <h4>Formas de pago:</h4>
+        <div class="container-pagos">
+          <img src={visa} alt="" class="visa-amex">
+          <img src={mastercard} alt="" class="master">
+          <img src={amex} alt="" class="visa-amex">
+          <img src={dinero} alt="" class="dinero">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-down">
+    <h4>Síguenos en todas nuestras redes sociales</h4>
+    <div class="icons-rs">
+      <a href="https://www.facebook.com/people/Dra-Adriana-Garcia-Materno-Fetal/100095155164708/" target="_blank">
+        <img src={facebook} alt="">
+      </a>
+      <a href="https://www.instagram.com/vidaprenatal_maternofetal/" target="_blank">
+        <img src={instagram} alt="">
+      </a>
+      <a href="" target="_blank">
+        <img src={doctoralia} alt="">
+      </a>
+      <a href="https://wa.me/525569329006?text=Buenas tardes, solicito información sobre " target="_blank">
+        <img src={whatsapp} alt="">
+      </a>
+    </div>
+    <p>© Dra. Janeth Adriana García Cid. Todos los derechos reservados <br> Design by
+      <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
+  </div>
+</footer>
+
+<!--Estilos-->
+<style>
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bg-footer {
+    width: 100%;
+    background-color: var(--verde-agua-claro);
+  }
+  .footer-up {
+    width: 100%;
+    background-color: var(--verde-agua-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--verde-agua);
+    width: 100%;
+  }
+  .footer-down p, .footer-down h4, .footer-down a, .footer-up h4{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  .icons-rs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .icons-rs i {
+    font-size: 20px;
+  }
+  .icons-rs img {
+    width: 22px;
+    height: auto;
+  }
+  .footer-up .certificados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .footer-up .certificados img {
+    width: 50px;
+    height: auto;
+  }
+  .items-text {
+    margin: 5%;
+  }
+  .items-text a {
+    text-decoration: none;
+    color: black;
+  }
+  .items-text h4 {
+    margin-bottom: 15px;
+  }
+  .pago {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pago img {
+    max-width: 80%;
+  }
+  .container-pagos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+  }
+  .container-pagos .visa-amex {
+    width: 50px;
+    height: auto;
+  }
+  .container-pagos .master {
+    width: 55px;
+    height: 38px;
+  }
+  .container-pagos .dinero {
+    width: 50px;
+    height: 35px;
+  }
+  @media (min-width: 768px) {
+    .footer-up {
+      flex-direction: row;
+    }
+    .items-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .items-text a {
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    .items-text a:hover {
+      transition: all 0.3s ease-in-out;
+      padding: 10px;
+      background-color: var(--rosa-claro);
+      border-radius: 10px;
+    }
+    .items-text h4 {
+      margin-bottom: 0;
+    }
+  }
+</style>

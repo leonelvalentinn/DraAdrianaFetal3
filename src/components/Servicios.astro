@@ -1,0 +1,299 @@
+---
+import usg10 from "../img/servicios/usg-10semanas.jpg";
+import usg11 from "../img/servicios/usg_11semanas.jpg";
+import usg2 from "../img/servicios/usg-segungo.jpg";
+import usgC from "../img/servicios/usg-crecimiento.png";
+import usgD from "../img/servicios/ultrasonido-doppler.png";
+import usgG from "../img/servicios/ultrasonido-gemelos.jpg";
+import D5 from "../img/servicios/usg-5d.webp";
+import revelacion from "../img/servicios/relevacion.jpg";
+import procedimientos from "../img/procedimientos.jpg";
+import adn from "../img/adn.jpg";
+import biopsia from "../img/biopsia-corion.jpg";
+import control from "../img/servicios/control-prenatal.png";
+import prueba from "../img/prueba.jpg";
+import riesgo from "../img/servicios/embarazo-riesgo.jpg";
+import parto from "../img/servicios/parto.jpg";
+import cesarea from "../img/servicios/Cesarea.jpg";
+import { Image } from "astro:assets";
+---
+
+<div class="title" id="servicios">
+  <h2 style="color: var(--morado-title); text-align: center;">SERVICIOS</h2>
+  <hr class="subrayado">
+</div>
+<section class="servicios">
+  <h3 class="sub-title">Ultrasonidos Especializados</h3>
+  <div class="container-grid">
+    <div class="item-servicio parte-2">
+      <h3 transition:name="titlebebe">USG Génetico de Primer Trimestre 11-14 sdg</h3>
+      <div>
+        <Image src={usg11} alt="" transition:name='imgbebe'>
+      </div>
+      <p>Evaluar el riesgo de síndrome de Down, así como determinar el riesgo de preeclampsia, restricción de crecimiento fetal y parto pretérmino.</p>
+      <a href="/USG-11"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-3">
+      <h3>USG Estructural Segundo Trimestre 18-24 sdg</h3>
+      <div>
+        <Image src={usg2} alt="">
+      </div>
+      <p>Evaluar a detalle que todos los órganos del bebé se hayan formados adecuadamente, ayuda a descartar malformaciones fetales.</p>
+      <a href="/USG-segundo-trimestre"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-4">
+      <h3>USG Crecimiento</h3>
+      <div>
+        <Image src={usgC} alt="">
+      </div>
+      <p>Determinar que el bebé vaya creciendo de forma adecuada para la edad gestacional. </p>
+      <a href="/USG-crecimiento"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-5">
+      <h3>Ultrasonido Doppler</h3>
+      <div>
+        <Image src={usgD} alt="">
+      </div>
+      <p>Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé que nos hablarán del bienestar fetal.</p>
+      <a href="/USG-doppler"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-">
+      <h3>Ultrasonidos de Embarazos Gemelares</h3>
+      <div>
+        <Image src={usgG} alt="">
+      </div>
+      <p></p>
+      <a href="/USG-gemelos"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-">
+      <h3>USG 3D, 4D, 5D</h3>
+      <div>
+        <Image src={D5} alt="">
+      </div>
+      <p>A través de la más alta tecnología permite obtener imágenes más claras y nítidas de tu bebé, en cual conocerás a detalle facciones faciales de tu bebé que estamos seguros te enamorarán. </p>
+      <a href="/USG-3D-4D-5D"><button>Conoce más</button></a>
+    </div>
+    <div class="parte-6">
+      <div class="item-servicio parte-66">
+        <h3>Revelación de Sexo Fetal</h3>
+        <div>
+          <Image src={revelacion} alt="">
+        </div>
+        <p></p>
+        <a href="/revelacion-sexo"><button>Conoce más</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Procedimientos-->
+<section class="servicios-procedimientos">
+  <h3 class="sub-title">Procedimientos</h3>
+  <div class="container-grid">
+    <div class="item-servicio parte-1">
+      <h3>Amniocentesis</h3>
+      <div>
+        <Image src={procedimientos} alt="">
+      </div>
+      <p></p>
+      <a href="/Amniocentesis"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-2">
+      <h3>Biopsia De Vellosidades Coriales</h3>
+      <img src={biopsia} alt="">
+      <p></p>
+      <a href="/Biopsia-vellosidades"><button>Conoce más</button></a>
+    </div>
+  </div>
+</section>
+<!--Estudios sanguineos-->
+<section class="servicios sanguineo">
+  <h3 class="sub-title">Estudios Sanguineos Especiales</h3>
+  <div class="container-grid">
+    <div class="item-servicio parte-1">
+      <h3>Duo Test</h3>
+      <img src={prueba} alt="">
+      <p>Marcadores bioquímicos séricos.</p>
+      <a href="/Duo-test"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-2">
+      <h3>ADN Fetal</h3>
+      <img src={adn} alt="">
+      <p>Conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.</p>
+      <a href="/adn-fetal"><button>Conoce más</button></a>
+    </div>
+  </div>
+</section>
+<!--Seguimiento del embarazo -->
+<section class="servicios-procedimientos">
+  <h3 class="sub-title">Seguimiento del Embarazo</h3>
+  <div class="container-grid">
+    <div class="item-servicio parte-1">
+      <h3>Control Prenatal</h3>
+      <img src={control} alt="">
+      <p></p>
+      <a href="/control-prenatal"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-2">
+      <h3>Embarazos de Bajo y Alto Riesgo</h3>
+      <img src={riesgo} alt="">
+      <p></p>
+      <a href="/embarazos-de-alto-riesgo"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-3">
+      <h3>Atención de Parto</h3>
+      <img src={parto} alt="">
+      <p></p>
+      <a href="/parto"><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-4">
+      <h3>Cesárea</h3>
+      <img src={cesarea} alt="">
+      <p></p>
+      <a href="/Cesarea"><button>Conoce más</button></a>
+    </div>
+  </div>
+</section>
+<!--Estilos -->
+<style>
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    background-color: rgba(144, 212, 198, 0.719);
+  }
+  .sanguineo {
+    margin-top: 30px;
+  }
+  .servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6%;
+    flex-direction: column;
+    background-color: rgba(144, 212, 198, 0.719);
+  }
+  .servicios-procedimientos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6%;
+    flex-direction: column;
+  }
+  .servicios .container-grid, .servicios-procedimientos .container-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+  .servicios .container-grid .item-servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: solid 3px var(--rosa);
+    border-radius: 40px;
+  }
+  .servicios-procedimientos .container-grid .item-servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: solid 3px var(--verde-agua);
+    border-radius: 40px;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .servicios .container-grid .item-servicio h3, .servicios .container-grid .item-servicio h2 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .servicios-procedimientos .container-grid .item-servicio h3, .servicios-procedimientos .container-grid .item-servicio h2 {
+    color: var(--rosa);
+    text-align: center;
+  }
+  .servicios .container-grid .item-servicio img, .servicios-procedimientos .container-grid .item-servicio img  {
+    width: 100%;
+    margin: 15px 0 35px 0;
+    border-radius: 40px;
+    height: auto;
+  }
+  .servicios .container-grid .item-servicio button {
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--rosa);
+  }
+  .servicios-procedimientos .container-grid .item-servicio button {
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--verde-agua);
+  }
+  .servicios .container-grid .item-servicio button:hover {
+    background-color: var(--morado);
+    transition: all 0.3s ease-in-out;
+  }
+  .container-ultrasonidos {
+    list-style: none;
+    padding-left: 0;
+  }
+  .container-ultrasonidos a {
+    text-decoration: none;
+  }
+  .container-ultrasonidos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .container-ultrasonidos li i{
+    color: palevioletred;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .servicios .sub-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--morado-title);
+  }
+  .servicios-procedimientos .sub-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--rosa);
+    margin-top: 20px;
+  }
+  .item-servicio p {
+    text-align: justify;
+  }
+
+  /* Media querys */
+  @media (min-width: 768px) {
+    .servicios .container-grid, .servicios-procedimientos .container-grid {
+      grid-template-columns: repeat(2, minmax(200px, 400px));
+      gap: 40px;
+    }
+    .parte-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .parte-6 .parte-66 {
+      width: 400px;
+    }
+  }
+</style>
